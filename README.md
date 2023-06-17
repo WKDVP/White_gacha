@@ -8,9 +8,9 @@ UI가 허접하다고요?
 진쟈루....
 
 Are you uncomfortable because the codes are fucked?
-Fix it yourself
+You fix it
 The UI is sucks?
-Make it yourself
+You make it
 I don't know HTML
 Help is always welcome
 Really...

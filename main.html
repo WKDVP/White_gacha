@@ -143,10 +143,8 @@
                         gachaArr[i] = "R";
                     }
                 }
-                gachaArr[9] = "SR";
-                console.log(gachaArr);
-            
-            
+                gachaArr[9] = "SR";            
+                await sleep(280);
                 for (var k = 0; k < 10; k++) {
                     var temp = gcArr[k];
                     if (gachaArr[k] == "R"){
@@ -160,7 +158,7 @@
                         
                         temp.src = "SSR.png";
                     }
-                    await sleep(300);
+                    await sleep(380);
                 }
                 var botan = document.getElementById("return");
                 botan.style.display="block"; 
@@ -196,6 +194,7 @@
                     gachaArr = "R";
                 }
             console.log(gachaArr);
+            await sleep(280);
                 if (gachaArr == "R"){
                     GC1.src = "R.png";
                 }

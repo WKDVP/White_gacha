@@ -72,10 +72,11 @@
             <img src="waiting.png" width="800px" id="wait">
         </div>
 
-
+        <link rel="stylesheet" href="button.css">
         <button onclick="ilbbop()">1회 뽑기</button>
         <button onclick="shipbbop()">10회 뽑기</button>
         <p style="color: white">10회 뽑기는 SR 1개 확정!</p>
+        <button>돌아가기</button>
         
 
         <script>
@@ -118,7 +119,7 @@
                     else if (randNum < 20) { //19%
                         gachaArr[i] = "SR";
                     }
-                    else {
+                    else { 
                         gachaArr[i] = "R";
                     }
                 }
@@ -128,7 +129,6 @@
             
                 for (var k = 0; k < 10; k++) {
                     var temp = gcArr[k];
-                    console.log(k);
                     if (gachaArr[k] == "R"){
                         temp.src = "R.png";
                     }

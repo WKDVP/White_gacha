@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>
             Made in Abyss Gacha
         </title>
@@ -17,9 +18,12 @@
                 display: block;
             }
             body {background-color: black;}
-        </style>
+            @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
 
-        
+            .font{
+                font-family:'Dongle', serif;
+            }
+        </style>        
     </head>
     
 
@@ -72,10 +76,13 @@
             <img src="waiting.png" width="800px" id="wait">
         </div>
 
-
-        <button onclick="ilbbop()">1회 뽑기</button>
-        <button onclick="shipbbop()">10회 뽑기</button>
-        <p style="color: white">10회 뽑기는 SR 1개 확정!</p>
+        <link rel="stylesheet" href="button.css">
+        <div class="jm-font">
+            <button onclick="ilbbop()">1회 뽑기</button>
+            <button onclick="shipbbop()">10회 뽑기</button>
+            <p class="font" style="color: white">10회 뽑기는 SR 1개 확정!</p>
+            <button>돌아가기</button>
+        </div>
         
 
         <script>
@@ -86,7 +93,7 @@
 
                 var imageCondom = document.getElementById("gacha-con");
                 imageCondom.style.display = "block";
-                setTimeout(changeImageTen, 3); //3000으로 바꾸자!!!!!!
+                setTimeout(changeImageTen, 3000); //3000으로 바꾸자!!!!!!
 
                 
             }
@@ -118,7 +125,7 @@
                     else if (randNum < 20) { //19%
                         gachaArr[i] = "SR";
                     }
-                    else {
+                    else { 
                         gachaArr[i] = "R";
                     }
                 }
@@ -128,7 +135,6 @@
             
                 for (var k = 0; k < 10; k++) {
                     var temp = gcArr[k];
-                    console.log(k);
                     if (gachaArr[k] == "R"){
                         temp.src = "R.png";
                     }
@@ -152,7 +158,7 @@
 
                 var imageCondom = document.getElementById("gacha-con");
                 imageCondom.style.display = "block";
-                setTimeout(changeImageOne, 3); //3000으로 바꾸자!!!!!!
+                setTimeout(changeImageOne, 3000); //3000으로 바꾸자!!!!!!
 
             }
             function changeImageOne() {

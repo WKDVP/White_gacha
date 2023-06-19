@@ -35,7 +35,7 @@
 
     <body>
         <div id="gacha-con", style="position: relative;">
-            <img src="fastNoFall3.gif" id="bdrd">
+            <img src="fastNoFall3.gif" id="bdrd" alt="응나아">
         </div>
 
         <div id="icon0" style="position: absolute; top: 100px; left: 10px;">
@@ -79,7 +79,7 @@
         </div>
 
         <div id="wait-con">
-            <img src="waiting.png" width="870px" id="wait">
+            <img src="waiting.png" width="870px" id="wait" onclick="chloe()">
         </div>
 
         <link rel="stylesheet" href="button.css">
@@ -100,7 +100,18 @@
             <button id="return" style="display: none;" onclick="window.location.reload()">돌아가기</button>
 
         <script>
-            
+            var a = 0;
+            function chloe(){
+                a = a + 1;
+                var chloe = document.getElementById("wait");
+                console.log(a);
+                if(a >= 30){
+                    chloe.src = "kawaii_chloe.png";
+                }
+                if(a >= 77){
+                    chloe.src = "nachi.png";
+                }
+            }
             function shipbbop(){
                 var TB = document.getElementById("tenButton");
                 var OB = document.getElementById("oneButton"); 
